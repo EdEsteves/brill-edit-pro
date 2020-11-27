@@ -5,6 +5,12 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: "@prismicio/gatsby-source-prismic-graphql",
+      options: {
+        repositoryName: "bep-landing-page"
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
